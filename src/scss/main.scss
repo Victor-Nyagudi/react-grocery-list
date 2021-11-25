@@ -1,0 +1,122 @@
+@import './config', './form';
+
+body {
+    font-family: $text-font;
+    font-weight: getFontWeight('regular');
+    color: getColor('dark-peach');
+
+    background-color: getColor('peach');
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+#root { flex: 1; }
+
+.groceries {
+    background-color: getColor('white');
+    border-radius: $border-radius;
+    box-shadow: 0 5px 40px darken(getColor('peach'), 13%);
+
+    padding: 2.5em 1.2em;
+
+    &__title {
+        font-family: $heading-font;
+        font-size: 2rem;
+        color: getColor('black');
+
+        text-align: center;
+        margin-bottom: .75em;
+    }
+
+    &__items {
+        list-style: none;
+        max-height: 500px;
+        min-height: 500px;
+        overflow-y: auto;
+    }
+
+    &__item {
+        margin-bottom: 1em;
+        background-color: getColor('cherry');
+        border-radius: $border-radius;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: .6em 0;
+
+        &:hover { background-color: lighten($color: getColor('cherry'), $amount: 1%);}
+
+        &-title {
+            font-size: 1.2rem;
+            margin-bottom: .2em;
+        }
+
+        &-quantity {
+            margin-bottom: .1em;
+
+            .number { font-weight: getFontWeight('semi-bold'); }
+        }
+
+        &-price {
+            font-weight: getFontWeight('semi-bold');
+        }
+
+        .grocery-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .trash-icon { 
+            color: getColor('black'); 
+            
+            &:hover { cursor: pointer; }
+        }
+    }
+
+    .btn {
+        font-family: inherit;
+        font-size: 1rem;
+
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+
+        padding: .5em 1.5em;
+
+        &--primary {
+            color: getColor('white');
+            background-color: getColor('purple');
+
+            &:hover {
+                @include hoverEffect(getColor('purple'));
+            }
+        }
+
+        &--secondary {
+            background-color: getColor('light-gray');
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        
+        margin-top: 1.5em;
+    }
+}
+
+@media (max-width: 375px) {
+    body { padding: 5em 0; }
+} 

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Outfit:wght@300;600&display=swap');
+
+$heading-font: 'Merriweather', serif;
+$text-font: 'Outfit', sans-serif;
+
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "semi-bold": 600
+);
+
+$colors: (
+    "peach": hsl(22, 100%, 85%),
+    "cherry": hsl(0, 49%, 93%),
+    "light-gray": hsl(0, 0%, 95%),
+    "dark-gray": hsl(0, 0%, 21%),
+    "black": hsl(0, 0%, 10%),
+    "white": hsl(0, 0%, 98%),
+    "purple": hsl(340, 71%, 54%)
+);
+
+$border-radius: 12px;
+
+@function getFontWeight($weight) {
+    @return map-get($map: $font-weights, $key: $weight);
+}
+
+@function getColor($color) {
+    @return map-get($map: $colors, $key: $color);
+}
+
+@mixin hoverEffect($color) {
+    background-color: lighten($color: $color, $amount: 10%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

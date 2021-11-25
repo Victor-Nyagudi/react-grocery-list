@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Grocery List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is (technically) my first React app. The previous one I made I did so following along a tutorial,
+however, this one was made mostly by myself whilst applying what I read in the docs.
 
-## Available Scripts
+It's quite similar to the the "legendary" to-do list, and I went ahead and used the SCSS that I've also
+been working with recently. 
 
-In the project directory, you can run:
+The main focus here wasn't styling or making things look good but applying the knowledge gained from
+reading the docs. 
 
-### `npm start`
+## Applied knowledge
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In this app, I applied the following:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Using forms in React
+- Using state and updating it via `setState()`
+- Working with components and composition
+- Styling components using SCSS in React
+- Conditionally rendering components
+- Using class components and function components (I mixed both intentionally for learning purposes)
+- Lifting state up
+- Handling events
 
-### `npm test`
+## Verdict
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I found it quite difficult to grasp React's hierarchical nature at first. Knowing what gave what props to who, 
+why nothing is being rendered to the DOM, as well as state and how it works were a couple of the things
+that made it rather tough to understand.
 
-### `npm run build`
+After going through the docs multiple times (and a LOT of patience later), things are getting much clearer.
+I knew front-end frameworks were crucial the more the project grew, but it only truly hit me while completing
+the frontend mentor challenges for an e-commerce landing page and rock, paper, scissors game.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I found myself querying the DOM a lot for things and saving HTML templates inside the JavaScript files to render
+to the DOM, and to be honest, things were starting to look and feel a bit messy. I knew at the back of my mind
+that a tool exists that can make the entire process simpler and easier to read and maintain.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+That being said, I might go back and redo those challenges this time with React, but nothing's set for now.
+React and the functionality it provides via components, state, props, etc. should make working on bigger projects easier the more I get comfortable with it. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I'm aware of the other heavyweights out there like Vue and Angular, but React is what I'll stick with for 
+now until further notice. 
 
-### `npm run eject`
+## Next Steps
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Even though I've grown by leaps and bounds after understanding React concepts and making this simple project,
+there's a lot more practice that needs to be done.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I understand hooks and have used them before, but I'd like to get even more practice with them. Furthermore, I
+do intend to make a couple more smaller projects, God-willing. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Here's to greater things! 

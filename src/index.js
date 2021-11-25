@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/main.css';
+import './img/pattern-background-desktop.svg';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
